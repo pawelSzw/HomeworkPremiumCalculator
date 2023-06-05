@@ -1,0 +1,13 @@
+= PolicyPremiumCalculator : Setup Guide =
+
+Technology Used:
+
+  -Java 8
+  -SpringBoot v 2.6.1
+  -Gradle v 6.8
+  -Junit
+
+How to run tests:
+
+  -./gradlew test
+

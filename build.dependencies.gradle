@@ -1,0 +1,19 @@
+dependencies {
+    //implementation
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('com.fasterxml.jackson.datatype:jackson-datatype-jsr310')
+    implementation('org.hibernate.validator:hibernate-validator')
+    implementation('javax.validation:validation-api')
+	implementation('org.springdoc:springdoc-openapi-ui:1.7.0')
+	implementation ('org.codehaus.groovy:groovy-all:3.0.9')
+    compileOnly("org.projectlombok:lombok:${lombokVersion}")
+    annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+
+
+    //test
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${jupiterVersion}")
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${jupiterVersion}")
+    testCompileOnly("org.projectlombok:lombok:${lombokVersion}")
+    testAnnotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+}

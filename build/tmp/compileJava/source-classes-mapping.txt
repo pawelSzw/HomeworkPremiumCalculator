@@ -1,0 +1,57 @@
+lv/proofit/interview/premium/calculator/service/policy/object/risk/RiskType.java
+ lv.proofit.interview.premium.calculator.service.policy.object.risk.RiskType
+lv/proofit/interview/premium/calculator/PremiumCalculatorApplication.java
+ lv.proofit.interview.premium.calculator.PremiumCalculatorApplication
+lv/proofit/interview/premium/calculator/web/ErrorResponse.java
+ lv.proofit.interview.premium.calculator.web.ErrorResponse
+lv/proofit/interview/premium/calculator/web/model/PremiumResponse.java
+ lv.proofit.interview.premium.calculator.web.model.PremiumResponse
+ lv.proofit.interview.premium.calculator.web.model.PremiumResponse$PremiumResponseBuilder
+lv/proofit/interview/premium/calculator/config/PremiumCalculatorConfig.java
+ lv.proofit.interview.premium.calculator.config.PremiumCalculatorConfig
+lv/proofit/interview/premium/calculator/web/model/Risk.java
+ lv.proofit.interview.premium.calculator.web.model.Risk
+ lv.proofit.interview.premium.calculator.web.model.Risk$RiskBuilder
+lv/proofit/interview/premium/calculator/web/model/BaseObject.java
+ lv.proofit.interview.premium.calculator.web.model.BaseObject
+lv/proofit/interview/premium/calculator/service/policy/PremiumRequestValidator.java
+ lv.proofit.interview.premium.calculator.service.policy.PremiumRequestValidator
+lv/proofit/interview/premium/calculator/service/policy/object/BicycleValidator.java
+ lv.proofit.interview.premium.calculator.service.policy.object.BicycleValidator
+lv/proofit/interview/premium/calculator/exception/PremiumCalculatorValidationException.java
+ lv.proofit.interview.premium.calculator.exception.PremiumCalculatorValidationException
+lv/proofit/interview/premium/calculator/config/RiskCalculatorConfig.java
+ lv.proofit.interview.premium.calculator.config.RiskCalculatorConfig
+lv/proofit/interview/premium/calculator/repository/DataRepository.java
+ lv.proofit.interview.premium.calculator.repository.DataRepository
+lv/proofit/interview/premium/calculator/utils/GroovyHelper.java
+ lv.proofit.interview.premium.calculator.utils.GroovyHelper
+lv/proofit/interview/premium/calculator/web/model/Bicycle.java
+ lv.proofit.interview.premium.calculator.web.model.Bicycle
+lv/proofit/interview/premium/calculator/config/GroovyConfig.java
+ lv.proofit.interview.premium.calculator.config.GroovyConfig
+lv/proofit/interview/premium/calculator/web/model/PremiumRequest.java
+ lv.proofit.interview.premium.calculator.web.model.PremiumRequest
+lv/proofit/interview/premium/calculator/service/policy/object/PremiumObjectCalculator.java
+ lv.proofit.interview.premium.calculator.service.policy.object.PremiumObjectCalculator
+lv/proofit/interview/premium/calculator/web/model/PremiumObject.java
+ lv.proofit.interview.premium.calculator.web.model.PremiumObject
+ lv.proofit.interview.premium.calculator.web.model.PremiumObject$PremiumObjectBuilder
+lv/proofit/interview/premium/calculator/service/policy/object/risk/bicycle/DamageCalculatorBicycle.java
+ lv.proofit.interview.premium.calculator.service.policy.object.risk.bicycle.DamageCalculatorBicycle
+lv/proofit/interview/premium/calculator/service/policy/object/risk/bicycle/BaseBicycleRiskCalculator.java
+ lv.proofit.interview.premium.calculator.service.policy.object.risk.bicycle.BaseBicycleRiskCalculator
+lv/proofit/interview/premium/calculator/service/policy/object/risk/RiskCalculator.java
+ lv.proofit.interview.premium.calculator.service.policy.object.risk.RiskCalculator
+lv/proofit/interview/premium/calculator/service/policy/object/risk/bicycle/ThirdPartyDamageCalculatorBicycle.java
+ lv.proofit.interview.premium.calculator.service.policy.object.risk.bicycle.ThirdPartyDamageCalculatorBicycle
+lv/proofit/interview/premium/calculator/service/policy/object/risk/bicycle/TheftCalculatorBicycle.java
+ lv.proofit.interview.premium.calculator.service.policy.object.risk.bicycle.TheftCalculatorBicycle
+lv/proofit/interview/premium/calculator/service/policy/object/risk/RiskCalculatorFactory.java
+ lv.proofit.interview.premium.calculator.service.policy.object.risk.RiskCalculatorFactory
+lv/proofit/interview/premium/calculator/service/policy/PremiumCalculator.java
+ lv.proofit.interview.premium.calculator.service.policy.PremiumCalculator
+lv/proofit/interview/premium/calculator/service/policy/object/BicycleCalculator.java
+ lv.proofit.interview.premium.calculator.service.policy.object.BicycleCalculator
+lv/proofit/interview/premium/calculator/web/PremiumCalculatorController.java
+ lv.proofit.interview.premium.calculator.web.PremiumCalculatorController

@@ -1,0 +1,47 @@
+buildscript {
+
+	repositories {
+		mavenCentral()
+		maven {
+			url "https://plugins.gradle.org/m2/"
+		}
+		gradlePluginPortal()
+	}
+
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath("org.springdoc:springdoc-openapi-gradle-plugin:${openApiVersion}")
+	}
+}
+
+
+apply plugin: 'groovy'
+apply plugin: 'java-library'
+apply plugin: 'io.spring.dependency-management'
+apply from: file('build.dependencies.gradle')
+apply plugin: "org.springdoc.openapi-gradle-plugin"
+apply plugin: 'org.springframework.boot'
+
+sourceSets {
+	main {
+		java {
+			srcDirs = ['src/main/java']
+		}
+		groovy {
+			srcDirs = ['src/main/groovy']
+		}
+	}
+	test {
+		java {
+			srcDirs = ['src/test/java']
+		}
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+test {
+	useJUnitPlatform()
+}
