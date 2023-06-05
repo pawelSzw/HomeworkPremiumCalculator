@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="lv.proofit.interview.premium.calculator.service.policy.object.BicycleCalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-05T13:07:45" hostname="PSZWEJKOWSKI" time="0.516">
-  <properties/>
-  <testcase name="testCalculate()" classname="lv.proofit.interview.premium.calculator.service.policy.object.BicycleCalculatorTest" time="0.516"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

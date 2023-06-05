@@ -1,2 +1,0 @@
-lv.proofit.interview.premium.calculator.service.policy.object/BicycleCalculatorTest.java
- lv.proofit.interview.premium.calculator.service.policy.object.BicycleCalculatorTest
