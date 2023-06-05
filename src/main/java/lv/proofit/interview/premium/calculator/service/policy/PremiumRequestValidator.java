@@ -16,18 +16,18 @@ import lv.proofit.interview.premium.calculator.web.model.PremiumRequest;
 @Service
 public class PremiumRequestValidator {
 
-    private Validator validator;
+	private Validator validator;
 
-    @Autowired
-	public PremiumRequestValidator(){
-        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+	@Autowired
+	public PremiumRequestValidator() {
+		ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
 		this.validator = factory.getValidator();
-    }
+	}
 
-    public void validate(final PremiumRequest premiumRequest){
-        final Set<ConstraintViolation<PremiumRequest>> constraints = this.validator.validate(premiumRequest);
-        if(!constraints.isEmpty()){
-            throw new PremiumCalculatorValidationException("Premium request is invalid.", constraints);
-        }
-    }
+	public void validate(final PremiumRequest premiumRequest) {
+		final Set<ConstraintViolation<PremiumRequest>> constraints = this.validator.validate(premiumRequest);
+		if (!constraints.isEmpty()) {
+			throw new PremiumCalculatorValidationException("Premium request is invalid.", constraints);
+		}
+	}
 }

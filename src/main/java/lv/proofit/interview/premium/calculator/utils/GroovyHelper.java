@@ -3,6 +3,7 @@ package lv.proofit.interview.premium.calculator.utils;
 import groovy.lang.Binding;
 import groovy.lang.GroovyShell;
 import groovy.lang.Script;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -28,8 +29,7 @@ public class GroovyHelper {
 			binding.setVariable("arg", arg);
 			script.setBinding(binding);
 			return script.invokeMethod(methodName, arg);
-		}
-		catch (IOException e) {
+		} catch (IOException e) {
 			throw new RuntimeException();
 		}
 	}

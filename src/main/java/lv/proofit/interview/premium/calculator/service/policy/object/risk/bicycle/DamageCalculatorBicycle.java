@@ -16,9 +16,11 @@ class DamageCalculatorBicycle extends BaseBicycleRiskCalculator {
 	public DamageCalculatorBicycle(DataRepository dataRepository) {
 		super(dataRepository);
 	}
+
 	@Override
 	public BigDecimal calculatePremium(Bicycle bicycle) {
-		return dataRepository.findPremiumByRiskType(getRiskType()).multiply(calculateSumInsuredFactor(bicycle)).multiply(calculateBicycleAgeFactor(bicycle));
+		return dataRepository.findPremiumByRiskType(getRiskType()).multiply(calculateSumInsuredFactor(bicycle))
+				.multiply(calculateBicycleAgeFactor(bicycle));
 	}
 
 	@Override
@@ -33,7 +35,7 @@ class DamageCalculatorBicycle extends BaseBicycleRiskCalculator {
 
 	@Override
 	public RiskType getRiskType() {
-		return  RiskType.DAMAGE;
+		return RiskType.DAMAGE;
 	}
 }
 

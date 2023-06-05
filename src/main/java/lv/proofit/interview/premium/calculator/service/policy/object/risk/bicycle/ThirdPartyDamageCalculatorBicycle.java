@@ -16,9 +16,11 @@ class ThirdPartyDamageCalculatorBicycle extends BaseBicycleRiskCalculator {
 	ThirdPartyDamageCalculatorBicycle(DataRepository dataRepository) {
 		super(dataRepository);
 	}
+
 	@Override
 	public BigDecimal calculatePremium(Bicycle bicycle) {
-		return dataRepository.findPremiumByRiskType(getRiskType()).multiply(calculateSumInsuredFactor(bicycle)).multiply(calculateRiskCountFactor(bicycle));
+		return dataRepository.findPremiumByRiskType(getRiskType()).multiply(calculateSumInsuredFactor(bicycle))
+				.multiply(calculateRiskCountFactor(bicycle));
 	}
 
 	@Override
@@ -33,8 +35,10 @@ class ThirdPartyDamageCalculatorBicycle extends BaseBicycleRiskCalculator {
 
 	@Override
 	public RiskType getRiskType() {
-		return  RiskType.THIRD_PARTY_DAMAGE;
-	};
+		return RiskType.THIRD_PARTY_DAMAGE;
+	}
+
+	;
 
 }
 

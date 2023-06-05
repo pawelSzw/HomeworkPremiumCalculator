@@ -12,6 +12,7 @@ import lv.proofit.interview.premium.calculator.web.model.Bicycle;
 
 public abstract class BaseBicycleRiskCalculator implements RiskCalculator<Bicycle> {
 	protected final DataRepository dataRepository;
+
 	@Autowired
 	protected BaseBicycleRiskCalculator(DataRepository dataRepository) {
 		this.dataRepository = dataRepository;
@@ -23,8 +24,7 @@ public abstract class BaseBicycleRiskCalculator implements RiskCalculator<Bicycl
 		int age = currentYear - bicycle.getManufactureYear();
 		Pair<BigDecimal, BigDecimal> sumInsuredFactors = dataRepository.findSumInsuredFactors(bicycle.getSumInsured());
 
-
 		//TO DO calculate sum insured factor
-		return  BigDecimal.ONE;
+		return BigDecimal.ONE;
 	}
 }

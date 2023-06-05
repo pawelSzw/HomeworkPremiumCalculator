@@ -16,12 +16,13 @@ import lombok.Setter;
 @Builder
 @Valid
 public class Risk {
-	@Pattern(regexp = "THEFT|DAMAGE", flags = Pattern.Flag.CASE_INSENSITIVE, message = "Risk type should be THEFT or DAMAGE")
+	@Pattern(regexp = "THEFT|DAMAGE", flags = Pattern.Flag.CASE_INSENSITIVE,
+			message = "Risk type should be THEFT or DAMAGE")
 	private String riskType;
 
-	@Min(value = 0,message = "Sum Insured should be greater than 0")
+	@Min(value = 0, message = "Sum Insured should be greater than 0")
 	private BigDecimal sumInsured;
 
-	@Min(value = 0,message = "Premium should be greater than 0")
+	@Min(value = 0, message = "Premium should be greater than 0")
 	private BigDecimal premium;
 }

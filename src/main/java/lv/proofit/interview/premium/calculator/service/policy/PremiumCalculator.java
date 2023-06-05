@@ -4,8 +4,10 @@ import lv.proofit.interview.premium.calculator.service.policy.object.BicycleCalc
 import lv.proofit.interview.premium.calculator.web.model.PremiumObject;
 import lv.proofit.interview.premium.calculator.web.model.PremiumRequest;
 import lv.proofit.interview.premium.calculator.web.model.PremiumResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.stream.Collectors;

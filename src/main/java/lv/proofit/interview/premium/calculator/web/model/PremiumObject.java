@@ -3,9 +3,11 @@ package lv.proofit.interview.premium.calculator.web.model;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
+
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
